@@ -1,0 +1,58 @@
+:root{--bg:#fbfaf7;--card:#fff;--ink:#1d2327;--muted:#5d6670;--line:#e4e1da;--accent:#b4541b;--accent2:#2f6f5e;
+--s-sup:#1f7a4d;--s-part:#5a8f2e;--s-mix:#b07d12;--s-weak:#b4541b;--s-con:#b3261e;--s-na:#6b7280;}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--accent2)}a:hover{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.site{background:#1d2327;color:#fff}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;padding:14px 20px}
+header.site .brand{font-weight:700;font-size:18px;color:#fff;text-decoration:none;letter-spacing:.2px}
+header.site .brand span{color:#f0a36b}
+nav.main{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px}
+nav.main a{color:#d7dde2;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+nav.main a.active,nav.main a:hover{color:#fff;border-color:#f0a36b}
+.disclaimer{background:#fff4e5;border-bottom:1px solid #f1d3a8;font-size:14px;color:#6b4a1a}
+.disclaimer .wrap{padding:8px 20px}
+main{padding:28px 0 60px}
+h1{font-size:30px;line-height:1.2;margin:0 0 10px}
+h2{font-size:22px;margin:34px 0 10px}
+h3{font-size:18px;margin:0 0 6px}
+.lede{font-size:18px;color:var(--muted);max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card a.title{font-weight:650;text-decoration:none;color:var(--ink)}
+.card a.title:hover{color:var(--accent)}
+.card .meta{font-size:13px;color:var(--muted)}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;color:#fff;white-space:nowrap}
+.s-Supported{background:var(--s-sup)}.s-Partly{background:var(--s-part)}.s-Mixed{background:var(--s-mix)}
+.s-Weak{background:var(--s-weak)}.s-Contradicted{background:var(--s-con)}.s-Not{background:var(--s-na)}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:#eef2f0;color:#2f4f45;margin:2px 4px 2px 0;text-decoration:none}
+.claim{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent2);border-radius:8px;padding:14px 16px;margin:12px 0}
+.claim p{margin:4px 0}
+.claim .q{font-style:italic;color:#3b4248;border-left:3px solid var(--line);padding-left:10px;margin:8px 0}
+.claim .ev{background:#f6f7f5;border-radius:6px;padding:8px 10px;margin-top:8px;font-size:14.5px}
+.claim .ev b{color:#33403b}
+.claim .src{font-size:13.5px;color:var(--muted)}
+.claim ul.refs{margin:4px 0 0 18px;padding:0;font-size:13.5px}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:14px 0}
+.box.warn{background:#fff8ef;border-color:#f1d3a8}
+.links li{margin:3px 0}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 16px;min-width:120px}
+.stat b{display:block;font-size:24px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.controls input,.controls select{font:inherit;padding:8px 10px;border:1px solid #cfcac0;border-radius:8px;background:#fff}
+.controls input{flex:1 1 260px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{background:#f3f1ec;position:sticky;top:0;cursor:pointer;white-space:nowrap}
+td.claimcell{min-width:260px}td.evcell{min-width:260px;color:#3b4248}
+tr:hover td{background:#fcfbf8}
+.count{font-size:14px;color:var(--muted)}
+footer{border-top:1px solid var(--line);font-size:13px;color:var(--muted);padding:20px 0 40px}
+@media (max-width:640px){h1{font-size:24px}.lede{font-size:16px}
+ table thead{display:none}table,tbody,tr,td{display:block;width:100%}
+ tr{border-bottom:2px solid var(--line);padding:6px 0}td{border:0;padding:4px 12px}
+ td::before{content:attr(data-label);display:block;font-size:11px;text-transform:uppercase;color:var(--muted);letter-spacing:.4px}}
